@@ -1,110 +1,284 @@
 
 .container {
-    display: flex;
-    /* flex-wrap: wrap;
-    justify-content: center; */
+  display: flex;
+  /* flex-wrap: wrap;
+  justify-content: center; */
 }
 .button-with-image {
-    width: 400px;
-    position: relative;
-    height: 520px;
-    display: -moz-grid-line;
-    background-color: transparent;
-    overflow: -moz-hidden-unscrollable;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    text-align: center;
-    margin-right: 150px;
+  width: 400px;
+  position: relative;
+  height: 520px;
+  display: -ms-grid;
+  background-color: transparent;
+  overflow: -moz-hidden-unscrollable;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  text-align: center;
+  margin-right: 150px;
 }
 /* .button-with-image img { */
-    /* width: 100%; Set the width of the image to 100% to fill the circular button */
-    /* height: 100%; Set the height of the image to 100% to fill the circular button */
-    /* object-fit: cover; Maintain the aspect ratio of the image and cover the entire circular button */
-  /* } */
+  /* width: 100%; Set the width of the image to 100% to fill the circular button */
+  /* height: 100%; Set the height of the image to 100% to fill the circular button */
+  /* object-fit: cover; Maintain the aspect ratio of the image and cover the entire circular button */
+/* } */
 .circle-image {
-    display: block;
-    margin: auto;
-    border-radius: 200%;
-    width: 80%;
-    /* height: unset; */
-    position: relative;
-    border: solid 2px bl;
-    /* border-radius:%; */
-    /* border: #a4aaa4; */
-    /* box-shadow: 0 0 0 20px #a4aaa4; */
+  display: block;
+  margin: 0 auto;
+  border-radius: 200%;
+  width: 80%;
+  height: auto;
+  position: relative;
+  border: solid 2px bl;
+  /* box-shadow: 0 0 10px #f00,
+  0 0 20px #f00,
+  0 0 40px #f00,
+  0 0 80px #f00,
+  0 0 100px rgb(0, 255, 8),
+  0 0 120px rgb(0, 255, 8),
+  0 0 160px rgb(0, 255, 17); */
+  /* border-radius:%; */
+  /* border: #a4aaa4; */
+  /* box-shadow: 0 0 0 20px #a4aaa4; */
 
 }
 .circle-image::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    width: 80%;
-    height: 80%;
-    border-radius: 50%;
-    box-shadow: 0 0 10px 5px #a4aaa4;
-    transform: rotate(45deg);
-  }
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 5px #a4aaa4;
+  transform: rotate(45deg);
+}
 .button-text {
-    display: block;
-    color: white;
-    margin-top: 30px;
-    font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
-    text-transform: capitalize;
-    /* margin-top: 10px; */
+  display: block;
+  color: white;
+  margin-top: 30px;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  text-transform: capitalize;
+  /* margin-top: 10px; */
 }
 
 .button-with-image:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .navbar {
-    background-color: #333;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-    top: 0;
-    right: 0;
-    position: fixed;
-    width: 100%;
-    z-index: 999;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  top: 50px;
+  right: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
 
 }
 
 /* Style for the navigation bar links */
 .navbar a {
-    float: right;
-    display: block;
-    color: white;
-    text-align: left;
-    padding: 30px;
-    text-decoration: none;
-    font-size: 30px;
+  float: right;
+  display: block;
+  color: white;
+  text-align: left;
+  /* padding: 30px; */
+  text-decoration: none;
+  font-size: 30px;
 }
 .kkkk{
-    margin-top: 200px;
+  margin-top: 200px;
 }
 /* Style for the navigation bar links on hover */
-.navbar a:hover {
-    background-color: #111;
+/* .navbar a:hover {
+  background-color: #111;
+} */
+
+.navbar-logo {
+  width: 100px; /* Set the width of the logo */
+  height: 100px; /* Set the height of the logo */
 }
 
-  .navbar-logo {
-    width: 100px; /* Set the width of the logo */
-    height: 100px; /* Set the height of the logo */
+.navbar img {
+  width: 200%; /* Make the image cover the entire width of the .navbar-logo div */
+  height: 100%; /* Make the image cover the entire height of the .navbar-logo div */
+  object-fit: cover; /* Use object-fit: contain; to fit the image within the .navbar-logo div while maintaining its aspect ratio */
+}
+
+
+
+
+
+
+
+
+
+
+.outer {
+  position: relative;
+  margin: 0 50px;
+  background: #111;
+}
+
+.button {
+  height: 70px;
+  width: 220px;
+  border-radius: 50px;
+}
+
+.circle {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.outer button,
+.outer span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.outer button {
+  background: #111;
+  color: #f2f2f2;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  z-index: 1;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button button {
+  height: 60px;
+  width: 210px;
+  border-radius: 50px;
+}
+
+.circle button {
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+}
+
+.outer span {
+  height: 100%;
+  width: 100%;
+}
+
+.button span {
+  border-radius: 50px;
+}
+
+.circle span {
+  border-radius: 50%;
+}
+
+.outer:hover span:nth-child(1) {
+  filter: blur(7px);
+}
+
+.outer:hover span:nth-child(2) {
+  filter: blur(14px);
+}
+
+.outer:hover {
+  background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+
+  animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+      border: 80px;
+      filter: hue-rotate(0deg);
   }
-  
-  .navbar img {
-    width: 200%; /* Make the image cover the entire width of the .navbar-logo div */
-    height: 100%; /* Make the image cover the entire height of the .navbar-logo div */
-    object-fit: cover; /* Use object-fit: contain; to fit the image within the .navbar-logo div while maintaining its aspect ratio */
+
+  100% {
+      filter: hue-rotate(360deg);
   }
-  
-  .box {
-    border: 1px solid white; /* Sets the border to 1 pixel wide and solid black */
-    padding: 10px; /* Adds padding inside the box to give some space around the text */
+}
+
+@media (max-width: 640px) {
+  .center {
+      flex-wrap: wrap;
+      flex-direction: column;
   }
+
+  .outer {
+      margin: 50px 0;
+  }
+}
+.circle-image:hover {
+  filter: brightness(120%);
+  box-shadow: 0 0 10px rgb(110, 0, 110),
+  0 0 20px rgb(110, 0, 110),
+  0 0 40px rgb(110, 0, 110),
+  0 0 60px rgb(110, 0, 110);
   
+}
+
+.body {
+  background-size: cover;
+}
+.kkkk{
+  margin-top: 200px;
+}
+.container1 {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bubbles {
+  position: absolute;
+  top: 10%;
+
+  display: flex;
+}
+
+.bubbles span {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: #4fc3dc;
+  margin: 0 4px;
+  border-radius: 50%;
+
+  box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100px #4fc3dc;
+  animation: animate 15s linear infinite;
+  animation-duration: calc(125s / var(--i));
+}
+
+.bubbles span:nth-child(even) {
+  background: #8f4be9;
+  box-shadow: 0 0 0 10px #6605e4, 0 0 50px #6605e4, 0 0 100px #6605e4;
+}
+
+@keyframes animate
+{
+  0%{
+      transform: translateY(100vh) scale(0);
+  }
+  100%{
+      transform: translateY(-100vh) scale(0.75);
+  }
+}
+.square-image:hover{
+  filter: brightness(120%);
+  box-shadow: 0 0 10px rgb(110, 0, 110),
+  0 0 20px rgb(110, 0, 110),
+  0 0 40px rgb(110, 0, 110),
+  0 0 60px rgb(110, 0, 110);
+}
+
+
+

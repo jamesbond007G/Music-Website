@@ -88,9 +88,9 @@
     margin-top: 200px;
 }
 /* Style for the navigation bar links on hover */
-.navbar a:hover {
+/* .navbar a:hover {
     background-color: #111;
-}
+} */
 
   .navbar-logo {
     width: 100px; /* Set the width of the logo */
@@ -108,3 +108,109 @@
     padding: 10px; /* Adds padding inside the box to give some space around the text */
   }
   
+  .outer {
+    position: relative;
+    margin: 0 50px;
+    background: #111;
+}
+
+.button {
+    height: 70px;
+    width: 220px;
+    border-radius: 50px;
+}
+.outer button,
+.outer span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.outer button {
+    background: #111;
+    color: #f2f2f2;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    z-index: 1;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.button button {
+    height: 60px;
+    width: 210px;
+    border-radius: 50px;
+}
+
+.circle button {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+}
+
+.outer span {
+    height: 100%;
+    width: 100%;
+}
+
+.button span {
+    border-radius: 50px;
+}
+
+.circle span {
+    border-radius: 50%;
+}
+
+.outer:hover span:nth-child(1) {
+    filter: blur(7px);
+}
+
+.outer:hover span:nth-child(2) {
+    filter: blur(14px);
+}
+
+.outer:hover {
+    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+
+    animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        border: 80px;
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+@media (max-width: 640px) {
+    .center {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .outer {
+        margin: 50px 0;
+    }
+}
+.navbar {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  right: 0;
+  position: fixed;
+  width: 100%;
+  z-index: -1;
+
+}
+/* .navbar1 a:hover {
+  background-color: #111;
+
+} */

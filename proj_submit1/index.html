@@ -4,13 +4,7 @@
 <head>
     <link rel="stylesheet" type="text/css" href="index2.css">
     <style>
-        body {
-            background-image: url(blacke.png);    
-            background-size: contain;
-            background-repeat: repeat;
-            /* background-attachment: fixed; */
-        }
-
+       
         h1 {
 
             color: antiquewhite;
@@ -21,55 +15,179 @@
         .circle-image {
             position: relative;
             overflow: hidden;
-            /* hide the shine effect outside of the circular image */
+          
         }
 
-        .circle-image::before {
-            content: "";
-            position: absolute;
-            top: 50%;
-            /* position the shine effect in the center of the circular image */
-            left: 50%;
-            transform: translate(-70%, -70%) rotate(70deg);
-            /* rotate the shine effect 45 degrees */
-            width: 200%;
-            height: 200%;
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, red 80%);
-            /* set the gradient for the shine effect */
-            opacity: 0;
-            transition: opacity 0.5s ease;
-            /* add a transition to the opacity property */
-        }
+      
 
-        .circle-image:hover::before {
-            opacity: 1;
-            /* make the shine effect visible when the user hovers over the circular image */
+        .circle-image:hover {
+            filter: brightness(120%);
+            box-shadow: 0 0 10px rgb(110, 0, 110),
+            0 0 20px rgb(110, 0, 110),
+            0 0 40px rgb(110, 0, 110),
+            0 0 60px rgb(110, 0, 110);
+            
         }
 
         .body {
-            background-image: url("back");
             background-size: cover;
         }
         .kkkk{
             margin-top: 200px;
         }
+        .container1 {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .bubbles {
+            position: absolute;
+            top: 10%;
+        
+            display: flex;
+        }
+
+        .bubbles span {
+            position: relative;
+            width: 30px;
+            height: 30px;
+            background: #4fc3dc;
+            margin: 0 4px;
+            border-radius: 50%;
+
+            box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100px #4fc3dc;
+            animation: animate 15s linear infinite;
+            animation-duration: calc(125s / var(--i));
+        }
+
+        .bubbles span:nth-child(even) {
+            background: #8f4be9;
+            box-shadow: 0 0 0 10px #6605e4, 0 0 50px #6605e4, 0 0 100px #6605e4;
+        }
+
+        @keyframes animate
+         {
+            0%{
+                transform: translateY(100vh) scale(0);
+            }
+            100%{
+                transform: translateY(-100vh) scale(0.75);
+            }
+         }
+         .square-image:hover{
+            filter: brightness(120%);
+            box-shadow: 0 0 10px rgb(110, 0, 110),
+            0 0 20px rgb(110, 0, 110),
+            0 0 40px rgb(110, 0, 110),
+            0 0 60px rgb(110, 0, 110);
+         }
     </style>
 </head>
 
-<body>
-    <nav class="navbar">
-       <!-- <div class="navbar-logo"> <img src="log2.png" alt="Navbar Logo"> -->
-    <!-- </div> -->
-    <div class="navbar-logo">
-        <img src="log11.png" alt="Navbar Logo">
-      </div>
-        <a href="index.html"><span style="color: turquoise;">Home</span></a>
-        <a href="artists.html">Artists</a>
-        <a href="albums.html">Albums</a>
-        <a href="songs.html">Songs</a>
-        <a href="about.html">About</a>
+<body style="background-color:black">
+    <div class="container1">
+        <div class="bubbles">
 
-    </nav>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:22;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:21;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:28;"></span>
+
+            <span style="--i:11;"></span>
+
+            <span style="--i:11;"></span>
+
+            <span style="--i:11;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:22;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:21;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:28;"></span>
+
+            <span style="--i:11;"></span>
+
+            <span style="--i:11;"></span>
+
+            <span style="--i:11;"></span>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <nav class="navbar">
+        <!-- <div class="navbar-logo"> <img src="log2.png" alt="Navbar Logo"> -->
+     <!-- </div> -->
+     <div class="navbar-logo">
+         <img src="log11.png" alt="Navbar Logo">
+       </div>
+           <a href="index.html">
+             <div class="center">
+                 <div class="outer button">
+                     <button>Home</button>
+                     <span></span>
+                     <span></span>
+                 </div>
+             </div>
+         </a>
+         <a href="artists.html">
+             <div class="center">
+                 <div class="outer button">
+                     <button>Artists</button>
+                     <span></span>
+                     <span></span>
+                 </div>
+             </div>
+         </a>
+         <a href="about.html">
+             <div class="center">
+                 <div class="outer button">
+                     <button>About</button>
+                     <span></span>
+                     <span></span>
+                 </div>
+             </div>
+         </a>
+ 
+     </nav>
     <!-- </div> -->
     <div class="kkkk">
     <h1 style="color: antiquewhite;">Top singer</h1>
@@ -90,12 +208,12 @@
                 <span class="button-text"><div class="box">Atif Aslam</div></span>
             </button>
         </a>
-        <a href="artists3.html">
+        <a href="artists4.html">
             <button class="button-with-image">
-                <div class="container1">
+                <div class="container">
                     <img src="sunidhi.png" alt="Sunidhi Chauhan" class="circle-image">
                 </div>
-                <span class="button-text">"><div class="box">Sunidhi Chauhan</div></span>
+                <span class="button-text"><div class="box">Sunidhi Chauhan</div></span>
             </button>
         </a>
     </div>
@@ -127,19 +245,19 @@
     <div class="container">
         <a href="artists1.html">
             <button class="button-with-image">
-                <img src="rasiya.png" alt="Arjit Singh" width="80%">
+                <img src="rasiya.png" alt="Arjit Singh" width="80%" class="square-image">
                 <span class="button-text"><div class="box">Rasiya</div></span>
             </button>
         </a>
         <a href="artists2.html">
             <button class="button-with-image">
-                <img src="darasal.png" alt="Atif Aslam" width="80%">
+                <img src="darasal.png" alt="Atif Aslam" width="80%" class="square-image">
                 <span class="button-text"><div class="box">Darasal</div></span>
             </button>
         </a>
         <a href="artists4.html">
             <button class="button-with-image">
-                <img src="o bedaraiya.png" alt="Sunidhi Chauhan" width="90%" height="60%">
+                <img src="o bedaraiya.png" alt="Sunidhi Chauhan" width="90%" height="60%" class="square-image">
                 <span class="button-text"><div class="box">O Bedariya</div></span>
             </button>
         </a>
