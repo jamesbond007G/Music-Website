@@ -1,0 +1,110 @@
+
+.container {
+    display: flex;
+    /* flex-wrap: wrap;
+    justify-content: center; */
+}
+.button-with-image {
+    width: 400px;
+    position: relative;
+    height: 520px;
+    display: -moz-grid-line;
+    background-color: transparent;
+    overflow: -moz-hidden-unscrollable;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    text-align: center;
+    margin-right: 150px;
+}
+/* .button-with-image img { */
+    /* width: 100%; Set the width of the image to 100% to fill the circular button */
+    /* height: 100%; Set the height of the image to 100% to fill the circular button */
+    /* object-fit: cover; Maintain the aspect ratio of the image and cover the entire circular button */
+  /* } */
+.circle-image {
+    display: block;
+    margin: auto;
+    border-radius: 200%;
+    width: 80%;
+    /* height: unset; */
+    position: relative;
+    border: solid 2px bl;
+    /* border-radius:%; */
+    /* border: #a4aaa4; */
+    /* box-shadow: 0 0 0 20px #a4aaa4; */
+
+}
+.circle-image::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 5px #a4aaa4;
+    transform: rotate(45deg);
+  }
+.button-text {
+    display: block;
+    color: white;
+    margin-top: 30px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    /* margin-top: 10px; */
+}
+
+.button-with-image:hover {
+    transform: scale(1.1);
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    right: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+
+}
+
+/* Style for the navigation bar links */
+.navbar a {
+    float: right;
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 30px;
+    text-decoration: none;
+    font-size: 30px;
+}
+.kkkk{
+    margin-top: 200px;
+}
+/* Style for the navigation bar links on hover */
+.navbar a:hover {
+    background-color: #111;
+}
+
+  .navbar-logo {
+    width: 100px; /* Set the width of the logo */
+    height: 100px; /* Set the height of the logo */
+  }
+  
+  .navbar img {
+    width: 200%; /* Make the image cover the entire width of the .navbar-logo div */
+    height: 100%; /* Make the image cover the entire height of the .navbar-logo div */
+    object-fit: cover; /* Use object-fit: contain; to fit the image within the .navbar-logo div while maintaining its aspect ratio */
+  }
+  
+  .box {
+    border: 1px solid white; /* Sets the border to 1 pixel wide and solid black */
+    padding: 10px; /* Adds padding inside the box to give some space around the text */
+  }
+  
