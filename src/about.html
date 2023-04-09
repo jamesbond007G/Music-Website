@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="index2.css">
+    <title>About Us</title>
+    <style>
+        /* CSS styles go here */
+        /* Example navbar styling */
+        .container1 {
+  display: flex;
+  width: 100%;
+  height: 400px;
+}
+
+.image-box {
+  flex: 0 0 50%;
+}
+
+.image-box img {
+  object-fit: cover;
+}
+
+.text-box {
+  flex: 0 0 50%;
+  padding: 20px;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+
+.column-align{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; align-items: center; flex-wrap: wrap;
+    
+}
+  
+  
+  
+
+
+
+  
+  
+  
+
+
+  
+  
+  
+  
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+        .active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        /* Example page content styling */
+        .container {
+            max-width: 800px;
+            font-size: 50 px;
+            padding: 20px;
+            text-emphasis-color: yellow;
+        }
+
+        h2 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .logo {
+            float: right;
+            width: 600px;
+            height: 150px;
+            border: 10px white;
+
+        }
+        .row-align{
+            display: flex;
+            position: flex-end;
+            flex-direction: row;
+        }
+
+
+
+
+
+
+        h1 {
+            display: flex;
+            color: transparent;
+            font-size: 15vh;
+            font-family: cursive;
+
+        }
+
+        h1 span {
+            animation: animate 9s linear infinite;
+            animation-delay: calc(0.1s * var(--i));
+        }
+
+        @keyframes animate {
+            0% {
+                filter: blur(2px);
+                text-shadow: 0 0 10px #0003ac,
+                    0 0 20px #0003ac,
+                    0 0 40px #0003ac,
+                    0 0 80px #0003ac,
+                    0 0 120px #0003ac,
+                    0 0 200px #0003ac,
+                    0 0 300px #0003ac 0 0 400px #0003ac,
+
+            }
+
+            40%,
+            80% {
+
+                filter: blur(2px) hue-rotate(360deg);
+                text-shadow:
+                    0 0 5px #0003ac,
+                    0 0 10px #0003ac,
+                    0 0 20px #0003ac,
+                    0 0 40px #0003ac,
+                    0 0 100px #0003ac,
+                    0 0 170px #0003ac;
+            }
+
+            100% {
+
+                color: transparent;
+                box-shadow: none;
+                filter: blur(0.5px) hue-rotate(0deg);
+
+            }
+        }
+
+        .flexbox {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+
+        }
+
+        .ok {
+            margin-top: 300px;
+            margin-left: 100px;
+            border: 10px solid white;
+            margin-left: 100px;
+
+        }
+
+        .imagebox {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .imagebox1 {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .imagebox2 {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .parent-flexbox {
+            display: flex;
+           flex-direction: column;
+        }
+
+        .child-flexbox {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 500px;
+            background-color: #eee;
+        }
+
+        .child-flexbox div {
+            padding: 10px;
+            text-align: center;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+
+<body style="background-color: BLACK;">
+    <nav class="navbar">
+        <!-- <div class="navbar-logo"> <img src="log2.png" alt="Navbar Logo"> -->
+     <!-- </div> -->
+     <div class="navbar-logo">
+        <img src="log1.png" alt="Navbar Logo" width="100px" height="150px" style="border-radius: 50%;">
+    </div>
+           <a href="index.html">
+             <div class="center">
+                 <div class="outer button">
+                     <button><div class="font101">Home</div></button>
+                     <span></span>
+                     <span></span>
+                 </div>
+             </div>
+         </a>
+         <a href="artists.html">
+             <div class="center">
+                 <div class="outer button">
+                    <br><br><br><br>
+                     <button><div class="font101">Artists</div></button>
+                     <span></span>
+                     <span></span>
+                 </div>
+             </div>
+         </a>
+         <a href="about.html">
+             <div class="center">
+                 <div class="outer button">
+                     <button><div class="font100"><p style="color:turquoise;">About</div></button></p>
+                     <span></span>
+                     <span></span>
+                 </div>
+             </div>
+         </a>
+     </nav>
+     <br><br><br><br><br><br><br><br><br><br><br><br><br>
+     <hr class="horizontal-line">
+     
+     <!-- <hr class="horizontal-line"> -->
+<!-- <div class="about-us"> -->
+    <h2 style="color: white;"><center>ABOUT US</center></h2>
+    <div class="font101">
+    <p style="color:white">Welcome to our music website! We are a team of music enthusiasts who are passionate about creating a platform for music lovers to connect, discover, and share their love for music. Our website is designed to provide a seamless and immersive music experience, featuring a diverse collection of songs, albums, and playlists from various genres. We are dedicated to promoting emerging artists and providing them with a platform to showcase their talent. Our team of creators is committed to curating high-quality content, delivering personalized recommendations, and offering interactive features to enhance your music discovery journey. With our user-friendly interface and sleek design, we aim to create a vibrant community of music lovers who can come together and celebrate their passion for music. Thank you for joining us on this melodic adventure!</p>
+<!-- </div> --><br><br><br>
+<p style="color: white">While our website contains all types of Artists, be it Pop or Classical, Romantic or Rapper, it also provides the user with a friendly usage.<br><br><br>Our website contains ALBUMS of various versatile artists, be it bollywood bash or hollywood hits. So Enjoy the experience of MUSIC MELODY and "Unleash your Rhythm"<br></p>
+<h1 style="color: #eee;"><center>"Add some music to your life. Music Melody is irreplacable"</center></h1>
+</div>
+<hr class="horizontal-line">
+<br>
+<h2 style="color: white;"><center>ABOUT CREATORS</center></h2><br><br><br><br><br>
+
+
+
+
+<div class="column-align">
+
+ <img src="divyaraaj.jpeg" width="20%" style="margin-top: 100px; margin-left: 0 auto;">
+ <p  class="font101" style="color: white;"> Divyarajsinh Mahida</p>
+<p  class="font101" style="color: white;"> gmail-id: divyaraj.mahida.students.iiit.ac.in</p>
+ <img src="gopal.jpeg" width="20%"  style="margin-top: 100px;  margin-left: 0 auto;">
+ <p class="font101" style="color: white;"> Gopal Garg</p>
+ <p  class="font101" style="color: white;"> gmail-id: gopal.garg.students.iiit.ac.in</p>
+
+</div>
+
+
+
+
+
+
+
+
+
+ 
+        </div>
+
+
+
+
+
+
+
+
+
+</body>
+
+
+</body>
+
+</html> 

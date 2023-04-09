@@ -1,0 +1,189 @@
+footer{
+    position: absolute;
+    bottom: -2;
+    left: 0;
+    right: 0;
+    background: rgb(44, 1, 1);
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: white;
+  }
+  .footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+  }
+  .footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+     
+  }
+  .socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     margin: 1rem 0 3rem 0;
+  }
+  .socials li{
+    margin: 0 10px;
+  }
+  .socials a{
+    text-decoration: none;
+    color: white;
+  }
+  .socials a i{
+    font-size: 1.1rem;
+  }
+  .socials a:hover i{
+    color: aqua;
+     
+  }
+  .footer-bottom{
+    background: black;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .footer-bottom p{
+     font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+  }
+  .footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+  }
+
+
+
+  .card {
+   
+    position: relative;
+    width: 300px;
+    height: 400px;
+ 
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    box-shadow: 10px 20px 40px black;
+    transition: 1s;
+}
+.card:hover{
+    transform: translateX(50%);
+}
+.card .details {
+
+    position:absolute;
+    top:200px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.card .details .content  {
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+    
+
+}
+.card .details .content h2 {
+   text-align: center;
+   font-weight: 700;
+   line-height: 1em;
+}
+
+.card .details .content h2 span {
+    color: white;
+    font-size: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+.card .imgBox{
+    top:100;
+    margin-left: 0 auto;
+    width: 100%;
+    height: 100%;
+ position: relative;
+    z-index: 1;
+    
+    justify-content: center;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: 1s;
+}
+.card .imgBox img:nth-child(2)
+{
+    transform:  rotateY(180deg);
+}
+.card .imgBox img{
+position: absolute;
+    transition: 1s;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    object-fit: cover;
+    backface-visibility: hidden;
+    
+}   
+.card:hover  .imgBox{
+    
+    transform: rotateY(-180deg);
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 400px;
+  perspective: 1000px;
+  border-radius: 50%;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: black;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #28003d;
+  color: white;
+  transform: rotateY(180deg);
+}
