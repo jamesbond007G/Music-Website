@@ -1,0 +1,80 @@
+.artist-container {
+    text-align: center;
+  }
+  
+  .artist-description {
+
+    font-size: 1.2em;
+  }
+  
+  #rating-form-container {
+    margin-top: 20px;
+  }
+  
+  #rating-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #rating-form label {
+    margin-bottom: 10px;
+  }
+  
+  #rating-form input[type="radio"],
+  #rating-form textarea {
+    margin-bottom: 10px;
+  }
+  
+  #rating-table-container {
+    margin-top: 20px;
+  }
+  
+  #rating-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #rating-table th,
+  #rating-table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  #rating-table th {
+    background-color: #f2f2f2;
+  }
+  
+  #countdown-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  #countdown-timer {
+    font-size: 2em;
+  }
+  
+
+  
+  
+
+  @keyframes zoom-in-out {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.main-photo{
+    animation: zoom-in-out 2s ease-in-out;
+}
+
+  
