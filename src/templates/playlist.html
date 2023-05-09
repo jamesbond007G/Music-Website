@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Songs</title>
+</head>
+<body>
+    <h1>Songs</h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Duration</th>
+        </tr>
+        {% for song in songs %}
+        <tr>
+            <td>{{ song[0] }}</td>
+            <td>{{ song[1] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <button onclick="window.location.href='/albums1.html'">Back</button>
+    <button onclick="window.location.href='/playlist'">Playlist</button>
+</body>
+</html>

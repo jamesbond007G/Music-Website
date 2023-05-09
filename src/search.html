@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="index2.css">
+
+    <style>
+        .c1 {
+            color: antiquewhite;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 40px;
+            margin-top: 20px;
+        }
+        
+        #results {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .result {
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid white;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .result:hover {
+            transform: scale(1.05);
+            background-color: green;
+            filter: brightness(120%);
+            box-shadow: 0 0 10px rgb(110, 0, 110), 0 0 20px rgb(110, 0, 110), 0 0 40px rgb(110, 0, 110), 0 0 60px rgb(110, 0, 110);
+        }
+        
+        .result img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .audio-player {
+            margin-top: 10px;
+            display: none;
+        }
+        
+        .audio-player audio {
+            width: 100%;
+        }
+        
+        .c2 {
+            color: antiquewhite;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 20px;
+        }
+    </style>
+    <meta charset="utf-8">
+    <title>iTunes API Demo</title>
+</head>
+
+<body style="background-color: black;">
+    <nav class="navbar" style="height: 200px;">
+        <!-- <div class="navbar-logo"> <img src="log1.png" alt="Navbar Logo">
+    </div> -->
+        <div class="navbar-logo">
+            <!-- <div class="adjust"> -->
+            <img src="log1.png" alt="Navbar Logo" width="100px" height="150px" style="border-radius: 50%;">
+            <!-- </div> -->
+        </div>
+        <a href="index.html">
+            <div class="center">
+                <div class="outer button">
+                    <button>
+                        <div class="font101">Home</div>
+                    </button>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </a>
+        <a href="artists.html">
+            <div class="center">
+                <div class="outer button">
+                    <button>
+                        <div class="font101">
+                            <p style="color:turquoise;">Artists</p>
+                    </button>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </a>
+        <a href="about.html">
+            <div class="center">
+                <div class="outer button">
+                    <button>
+                        <div class="font101">About</div>
+                    </button>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </a>
+        <a href="search.html">
+            <div class="center">
+                <div class="outer button">
+                    <button>
+                        <div class="font101">Search</div>
+                    </button>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </a>
+        <a href="spotlight.html">
+            <div class="center">
+                <div class="outer button">
+                    <button>
+                        <div class="font100">Artist Spotlight</p>
+                        </div>
+                    </button>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </a>
+        <a href="playlist.html">
+            <div class="center">
+                <div class="outer button">
+                    <button>
+                        <div class="font101">PLaylist</div>
+                    </button>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </a>
+    </nav>
+    <br><br><br><br><br><br><br>
+    <form style="margin-top: 300px;">
+        <div class="c1"> <label for="search-term">Search Term:</label>
+            <input style="height: 40px;  font-size: 20px;" type="text" id="search-term" name="search-term" required>
+            <label for="duration" style="margin-left: 70px;">Duration (in minutes):</label>
+            <input type="number" id="duration" name="duration" min="1" style="height: 40px;  font-size: 20px;">
+            <label for="explicit" style="margin-left: 70px;">Explicit:</label>
+            <select id="explicit" name="explicit">
+                <option value="">Select...</option>
+                <option value="explicit">Yes</option>
+                <option value="notExplicit">No</option>
+            </select>
+            <button type="submit" id="search-btn">Search</button>
+            <button type="button" id="clear-filters-btn">Clear Filters</button>
+        </div>
+    </form>
+    <div class="c2">
+        <div id="results"></div>
+
+        <script src="search1.js"></script>
+    </div>
+    <footer style="margin-top: 700px;">
+        <div class="footer-content">
+            <h3>BOOMGO :Unleash Rhythm</h3>
+            <a href="about.html" style="text-decoration: none; color:aliceblue; font-size:40px">
+                <p div class="font101">About The Page</p>
+            </a>
+            <p>
+                <div class="font101">Add some music to your life. Music Melody is irreplacable</p>
+            <ul class="socials">
+                <li><i class="fa fa-facebook"></i></li>
+                <li><i class="fa fa-twitter"></i></li>
+                <li><i class="fa fa-google-plus"></i></li>
+                <li><i class="fa fa-youtube"></i></li>
+                <li><i class="fa fa-instagram"></i></li>
+
+            </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>copyright &copy;2023 BoomGo. All rights reserved</p>
+            </div>
+    </footer>
+</body>
+
+</html>
